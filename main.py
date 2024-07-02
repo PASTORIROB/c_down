@@ -17,7 +17,7 @@ def index():
     left_num = random.randint(1, 100)
     right_num = random.randint(1, left_num - 1)
     
-    return render_template("index.html", days=days, hours=hours, minutes=minutes, seconds=seconds, left_num=left_num, right_num=right_num)
+    return render_template("c.html", days=days, hours=hours, minutes=minutes, seconds=seconds, left_num=left_num, right_num=right_num)
 
 @app.route("/simulate", methods=["POST"])
 def simulate():
